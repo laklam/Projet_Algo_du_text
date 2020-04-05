@@ -19,40 +19,42 @@ html = """<!DOCTYPE html>
     <title>TELLMe</title>
     <style>
         
-* {
-  box-sizing: border-box;
-}
+      * {
+        box-sizing: border-box;
+      }
 
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid black;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
+      form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid black;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+      }
 
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #20B2AA;
-  color: black;
-  font-size: 17px;
-  border: 1px solid black;
-  border-left: none;
-  cursor: pointer;
-}
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #20B2AA;
+        color: black;
+        font-size: 17px;
+        border: 1px solid black;
+        border-left: none;
+        cursor: pointer;
+      }
 
-form.example button:hover {
-  background: black;
-}
+      form.example button:hover {
+        background: black;
+          color: #20B2AA;
 
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+      }
+
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
         center{
             font-size: 300%;
             /*position: absolute;*/
