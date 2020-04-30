@@ -1,5 +1,6 @@
-<<<<<<< creerServeur
-# Projet_Algo_du_text 
+# Projet_Algo_du_text
+
+<h1> créer serveur</h1>
 Ce serveur a été fait avec la version Python 3
 
 Comment l'utliser ?
@@ -8,7 +9,6 @@ Si vous êtes sur UNIX: python3 server.py
 Sur windows: python .\server.py
 
 Si tout fonctionne, il sera afficher le numéro de port du serveur
-=======
 #Page1 du moteur de recherche
 
 (Attention, utiliser python3, j'ai utilisé la version 3.5.2)
@@ -20,5 +20,4 @@ Après avoir lancé le serveur (rappel: ouvrir un terminal, se placer dans le r�
 Vous devriez voir:
 
 - Aperçu page du moteur de recherche
-![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/page1Moteur/Page1MoteurDeRecherche.PNG)
->>>>>>> Faiza
+![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/Faiza/Page1MoteurDeRecherche.PNG)
