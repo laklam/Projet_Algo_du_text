@@ -75,7 +75,7 @@ html = """<!DOCTYPE html>
         </div>
         <div class = "row">
             <div class="col-sm-12">    
-                <form class="example" action="/index.py" style="margin:auto;max-width:500px">
+                <form class="example" action="server.py" style="margin:auto;max-width:500px">
                     <input type="text" placeholder="Your search..." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </form>
