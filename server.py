@@ -1,12 +1,23 @@
-import http.server
- 
-PORT = 8889
-server_address = ("", PORT)
+from flask import Flask, render_template, request, jsonify, url_for, redirect
 
-server = http.server.HTTPServer
-handler = http.server.CGIHTTPRequestHandler
-handler.cgi_directories = ["/"]
-print("Serveur actif sur le port :", PORT)
 
-httpd = server(server_address, handler)
-httpd.serve_forever()
+list_url=['univ','hey']
+
+#création objet app
+app = Flask(__name__, template_folder='.')
+@app.route('/') #racine
+def index():
+  search = request.args.get('search')
+  return render_template('index.html')
+
+
+
+@app.route('/pageResults' , methods = ['GET', 'POST'])
+def pageResults():
+    search = request.form['search']
+    if len(search)==0:
+      return render_template('index.html')
+    return render_template('pageResults.html', search=search, list_url=list_url)    
+
+if __name__ == '__main__':
+    app.run(debug=True)
