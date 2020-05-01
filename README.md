@@ -23,5 +23,5 @@ Vous devriez voir:
 
 <h1>Page résultats</h1>
 
-- Aperçu page résultats
+- Aperçu provisoire de la page résultats (sans appels des fonctions qui sont en cours d'implémentation)
 ![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/Faiza/pageResults.PNG)
