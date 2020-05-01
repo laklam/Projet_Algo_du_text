@@ -20,3 +20,8 @@ Vous devriez voir:
 
 - Aperçu page du moteur de recherche
 ![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/Faiza/pageIndex.PNG)
+
+<h1>Page résultats</h1>
+
+- Aperçu page résultats
+![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/Faiza/pageResults.PNG)
