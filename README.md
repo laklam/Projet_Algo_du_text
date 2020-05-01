@@ -19,4 +19,4 @@ Après avoir lancé le serveur, allez sur un navigateur de recherche et allez su
 Vous devriez voir:
 
 - Aperçu page du moteur de recherche
-![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/Faiza/Page1MoteurDeRecherche.PNG
+![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/Faiza/pageIndex.PNG
