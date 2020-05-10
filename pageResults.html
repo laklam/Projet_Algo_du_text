@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <title>TELLMe - Results</title>
+    <style>
+        
+      * {
+        box-sizing: border-box;
+      }
+
+      form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid black;
+        float: left;
+        width: 80%;
+        background: #f1f1f1;
+      }
+
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: #20B2AA;
+        color: black;
+        font-size: 17px;
+        border: 1px solid black;
+        border-left: none;
+        cursor: pointer;
+      }
+
+      form.example button:hover {
+        background: black;
+          color: #20B2AA;
+
+      }
+
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      a:visited {
+        color: black;
+      }
+
+      a:hover {
+        color: #20B2AA;
+      }
+
+      a:active {
+        color: black;
+      }
+
+      .rep{
+        font-size: 150%;
+      }
+
+      .para{
+        line-height: 5px;
+        padding-top: 15px;
+      }
+
+      h2{
+        font-size: 125%;
+        color:#20B2AA;
+      }
+
+      p{
+        color: #20B2AA;
+      }
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 title="TELLMe"><a href="http://localhost:5000/">TELLMe</a></h1>
+            </div>
+        </div>
+        <div class = "row">
+            <div class="col-sm-12">
+                <form id = "formulaire" class="example" method="post" action="{{ url_for('pageResults') }}" style="max-width:600px" onsubmit="return true" >
+                    <input type="text" placeholder="Your search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <hr>
+      <div class="row" >
+        <div class="col-sm-12">
+          <h1 class="rep">
+            Résultats obtenus pour <span style="color:#20B2AA;">{{ search }} </span>
+          </h1>
+        </div>
+      </div>
+    
+      <div>
+        {% for i in range(0,(list_url|length)) %}
+        <div class="row">
+          <div class="col-sm-12 para">
+            <h2>
+              {{list_url[i][0]}}
+            </h2>
+          <p> <a id="lien" href= "{{list_url[0][1]}}">{{list_url[i][1]}}</a></p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+
+    <script>
+      function valider(){
+        frm = document.getElementById("formulaire");
+        if(frm.elements['search'].value != ""){
+            document.getElementById("formulaire").action = "{{ url_for('pageResults') }}";
+            return true;
+        }
+        else{
+          document.getElementById("formulaire").action = "index.html";
+          return false;
+        }
+      }
+
+      
+
+    </script>
+</body>
+</html>
