@@ -25,3 +25,6 @@ Vous devriez voir:
 
 - Aperçu provisoire de la page résultats (sans appels des fonctions qui sont en cours d'implémentation)
 ![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/Faiza/pageResults.PNG)
+
+- Aperçu de la page résultats si on utilise la liste de test (dans le serveur, décommenter ligne 4 et commenter ligne 7)
+![page1MoteurDeRecherche](https://github.com/laklam/Projet_Algo_du_texte/blob/Faiza/pageResults_test.PNG)
